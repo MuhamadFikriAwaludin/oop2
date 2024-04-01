@@ -18,11 +18,11 @@ ob_start();
             <form action="" name="tambah" method="post">
                 <div class="mb-3 col-12">
                     <label class="form-label" style="font-size: 20px; color: white;">Nama</label>
-                    <div class="col-6"> <input type="text" name="nama" id="" style="width: 620px;"></div>
+                    <div class="col-6"> <input type="text" name="nama" id="nama" style="width: 620px;"></div>
                 </div>
                 <div class="mb-3 col-12">
                     <label class="col-6 form-label" style="font-size: 20px; color: white;">Alamat</label>
-                    <div class="col-6"> <textarea name="alamat" id="" cols="90" rows="10"></textarea>
+                    <div class="col-6"> <textarea name="alamat" id="alamat" cols="90" rows="10"></textarea>
                         <div>
                         </div>
 

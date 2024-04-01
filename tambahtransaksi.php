@@ -19,10 +19,8 @@
                         <?php
                         include "koneksi.php";
                         $db = new koneksi;
-                        $total =0;
                         $query = "select * from muzakki, beras WHERE muzakki.id_beras = beras.id";
                         foreach ($db->tampilData($query) as $row) {
-                            $total = ($row['harga_ltr'] * 3.5)* $row['jml_jiwa'] ;
                             ?>
 
                             <option value="<?php echo $row['id_muzakki']; ?>">
@@ -52,7 +50,9 @@
     </div>
     <script type="text/javascript">
         function total() {
-            document.getElementById('tagihan').value = <?php echo $total; ?>;
+            var total = (<?php echo $row['harga_ltr']; ?> * 3.5) * <?php echo $row['jml_jiwa']; ?>
+
+            document.getElementById('tagihan').value =  total;
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

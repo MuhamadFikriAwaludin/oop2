@@ -32,7 +32,8 @@
                 </span>
                 <input type="password" name="password" placeholder="Password" required>
             </div>
-            <button type="submit" class="btn">Login</button>
+            <div class="input-group"><button type="submit" class="btn">Login</button></div>
+            <p style="font-size: 20px; color: white;" class="login-register-text">Belum Punya Akun??<a href="registrasi.php">Daftar Disini</p>
         </form>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

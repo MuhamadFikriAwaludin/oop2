@@ -114,8 +114,6 @@ if (!isset($_SESSION['username'])) {
                                                             <?php echo $row['status']; ?>
                                                         </td>
                                                         <td>
-                                                            <a href="edittransaksi.php?id=<?php echo $row['id']; ?>"
-                                                                class="btn btn-warning">Edit</a>
                                                             <a href="hapustransaksi.php?id=<?php echo $row['id']; ?>"
                                                                 class="btn btn-danger"
                                                                 onclick="return confirm('Are you sure?')">Hapus</a>
